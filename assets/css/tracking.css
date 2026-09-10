@@ -1,0 +1,72 @@
+/* FeedHat — [feedhat_track] status page. Scoped under
+ * cf- prefix to avoid theme collisions, same as the rest of the plugin. */
+
+.cf-track {
+	max-width: 640px;
+	margin: 0 0 1.5em;
+}
+
+.cf-track__title {
+	margin: 10px 0 4px;
+}
+
+.cf-track__meta {
+	margin: 0 0 16px;
+	color: #666;
+	font-size: 13px;
+}
+
+.cf-track__note {
+	padding: 14px 16px;
+	background: #f7f7f7;
+	border-radius: 8px;
+	color: #333;
+	font-size: 15px;
+	line-height: 1.6;
+}
+
+.cf-track__note p:first-child {
+	margin-top: 0;
+}
+
+.cf-track__note p:last-child {
+	margin-bottom: 0;
+}
+
+.cf-track__empty {
+	color: #666;
+}
+
+/* Same status-badge look as wp-admin (assets/css/admin.css) — duplicated
+ * rather than shared since this stylesheet loads on the front end only,
+ * on whichever page hosts the shortcode, never inside wp-admin itself. */
+.cf-track .cf-status-badge {
+	display: inline-block;
+	padding: 2px 10px;
+	border-radius: 999px;
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 1.6;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+}
+
+.cf-track .cf-badge-new {
+	background: #fbeaea;
+	color: #a02a2a;
+}
+
+.cf-track .cf-badge-resolved {
+	background: #e6f4ea;
+	color: #1e6b3a;
+}
+
+.cf-track .cf-badge-in_progress {
+	background: #fdf0d5;
+	color: #9a6700;
+}
+
+.cf-track .cf-badge-wont_fix {
+	background: #f0f0f1;
+	color: #646970;
+}

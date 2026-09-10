@@ -1,0 +1,430 @@
+/* FeedHat — wp-admin feedback list styles. */
+
+.cf-thumb-link {
+	display: inline-block;
+}
+
+/* Screenshot lightbox (assets/js/admin.js) — shared by Feedback Details,
+ * Pro's Kanban cards, and internal-note images alike, so it must live here
+ * (Free, always loaded) rather than in kanban.css. */
+
+.cf-lightbox {
+	position: fixed;
+	inset: 0;
+	z-index: 100000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 32px;
+	background: rgba(0, 0, 0, 0.75);
+	cursor: zoom-out;
+}
+
+.cf-lightbox img {
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 4px;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.cf-thumb {
+	display: block;
+	width: 70px;
+	height: auto;
+	border-radius: 4px;
+	border: 1px solid #dcdcde;
+}
+
+.cf-status-badge {
+	display: inline-block;
+	padding: 2px 10px;
+	border-radius: 999px;
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 1.6;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+}
+
+.cf-badge-new {
+	background: #fbeaea;
+	color: #a02a2a;
+}
+
+.cf-badge-resolved {
+	background: #e6f4ea;
+	color: #1e6b3a;
+}
+
+/* Pro's 2 extra Kanban statuses (Free only ever produces new/resolved). */
+.cf-badge-in_progress {
+	background: #fdf0d5;
+	color: #9a6700;
+}
+
+.cf-badge-wont_fix {
+	background: #f0f0f1;
+	color: #646970;
+}
+
+.cf-status-toggle {
+	display: inline-block;
+	margin-top: 4px;
+	font-size: 12px;
+}
+
+.column-cf_note {
+	max-width: 280px;
+}
+
+/* Settings page */
+
+.cf-settings__title {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin: 16px 0 4px;
+}
+
+.cf-settings__title .dashicons {
+	flex: 0 0 auto;
+	width: 30px;
+	height: 30px;
+	font-size: 30px;
+	color: #2271b1;
+}
+
+.cf-settings__tagline {
+	margin: 0 0 20px;
+	color: #646970;
+	font-style: italic;
+}
+
+/* WordPress core relocates every admin_notices output (ours and every other
+ * active plugin's alike) to right after .cf-settings__title above — give
+ * that landing spot, and whatever normally follows it, breathing room so
+ * the page still reads cleanly whether or not any notices are present. */
+.cf-settings .notice,
+.cf-settings .updated,
+.cf-settings .error {
+	margin: 12px 0;
+}
+
+.cf-settings__tabs {
+	margin-top: 24px;
+}
+
+/* Flexbox on the tab link itself, not vertical-align on the icon — dashicon
+ * glyphs carry different visual weight within their 20x20 box, so aligning
+ * icon-to-text via vertical-align never lands the same for every glyph;
+ * making both flex items and centering the row does. */
+.cf-settings__tabs .nav-tab {
+	display: inline-flex;
+	align-items: center;
+}
+
+.cf-settings__tabs .nav-tab .dashicons {
+	margin-right: 4px;
+	width: 18px;
+	height: 18px;
+	font-size: 18px;
+	line-height: 1;
+}
+
+.cf-tab-panel {
+	display: none;
+}
+
+.cf-tab-panel.is-active {
+	display: block;
+}
+
+.cf-tab-panel > h2:first-child {
+	margin-top: 1em;
+}
+
+.cf-settings h2 {
+	margin-top: 2em;
+}
+
+.cf-pro-upsell {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+	max-width: 600px;
+	margin-top: 1em;
+	padding: 16px 20px;
+	background: #f6f7f7;
+	border-left: 4px solid #2271b1;
+}
+
+.cf-pro-upsell .dashicons {
+	flex: 0 0 auto;
+	color: #2271b1;
+}
+
+.cf-pro-upsell p {
+	margin: 0;
+}
+
+.cf-logo-uploader {
+	display: flex;
+	align-items: flex-start;
+	gap: 14px;
+}
+
+.cf-logo-uploader__preview {
+	width: 56px;
+	height: 56px;
+	object-fit: contain;
+	padding: 6px;
+	background: repeating-conic-gradient(#f3f3f3 0% 25%, #fff 0% 50%) 50% / 12px 12px;
+	border: 1px solid #dcdcde;
+	border-radius: 4px;
+}
+
+.cf-logo-uploader__controls p {
+	margin: 8px 0 4px;
+}
+
+.cf-launcher-preview-wrap {
+	display: flex;
+	align-items: center;
+	min-height: 70px;
+	padding: 16px;
+	background: repeating-conic-gradient(#f3f3f3 0% 25%, #fff 0% 50%) 50% / 16px 16px;
+	border: 1px solid #dcdcde;
+	border-radius: 6px;
+}
+
+/* Overrides widget.css's position: fixed — this is an inline preview inside
+ * the settings form, not the real floating launcher. Relative (not static)
+ * so the icon-style tooltip, which anchors via position: absolute off the
+ * button itself, still has a containing block to position against. */
+.cf-launcher-preview-wrap .cf-launcher {
+	position: relative;
+	cursor: default;
+}
+
+/* The Middle positions' viewport-relative vertical centering (top: 50% +
+ * translateY(-50%)) doesn't apply inside this static preview box — the
+ * wrap's own flex align-items: center already centers it here instead. */
+.cf-launcher-preview-wrap .cf-pos-middle-left,
+.cf-launcher-preview-wrap .cf-pos-middle-right {
+	top: auto;
+	transform: none;
+}
+
+.cf-targeting-option {
+	display: inline-block;
+	margin-bottom: 6px;
+}
+
+.cf-targeting-panel {
+	display: none;
+	margin: 10px 0 10px 24px;
+	padding: 10px 14px;
+	background: #f6f7f7;
+	border-left: 3px solid #dcdcde;
+	max-width: 500px;
+}
+
+.cf-page-select {
+	min-width: 320px;
+}
+
+/* Feedback detail metabox */
+
+.cf-detail__summary {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 8px 20px;
+	margin-bottom: 18px;
+	padding-bottom: 14px;
+	border-bottom: 1px solid #e2e4e7;
+}
+
+.cf-detail__summary-item {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	color: #3c434a;
+	font-size: 13px;
+}
+
+.cf-detail__summary-item .dashicons {
+	width: 18px;
+	height: 18px;
+	font-size: 18px;
+	color: #8c8f94;
+}
+
+/* The status badge already carries its own resolve/reopen link right after
+ * it (render_status_badge()) — keep both on one line instead of the link
+ * dropping to a second line under the badge. */
+.cf-detail__summary-item--status {
+	gap: 8px;
+}
+
+/* render_status_badge() prints a <br> before its toggle link (needed where
+ * it's used in the list table's narrow Status column) — hidden here so the
+ * badge and the link sit on one line as flex siblings instead. */
+.cf-detail__summary-item--status br {
+	display: none;
+}
+
+.cf-detail__summary-item--status .cf-status-toggle {
+	margin-top: 0;
+}
+
+.cf-detail__body {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+	align-items: flex-start;
+}
+
+.cf-detail__col--screenshot {
+	flex: 1 1 320px;
+	max-width: 45%;
+}
+
+.cf-detail__col--info {
+	flex: 2 1 320px;
+	min-width: 0;
+}
+
+.cf-detail__screenshot {
+	margin: 0;
+}
+
+.cf-detail__screenshot .cf-lightbox-trigger {
+	display: block;
+	width: 100%;
+	padding: 0;
+	border: 0;
+	background: none;
+}
+
+.cf-detail__screenshot img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	border: 1px solid #dcdcde;
+	border-radius: 4px;
+	cursor: zoom-in;
+}
+
+/* Pro: per-pin title/description list under the screenshot, one entry per
+ * numbered pin marker drawn on it (FeedHat_Pin_Tool). */
+
+.cf-pin-notes {
+	margin: 10px 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+.cf-pin-notes__item {
+	display: flex;
+	gap: 8px;
+	padding: 8px 0;
+	border-top: 1px solid #f0f0f1;
+}
+
+.cf-pin-notes__number {
+	display: inline-flex;
+	flex: 0 0 auto;
+	align-items: center;
+	justify-content: center;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #e63946;
+	color: #fff;
+	font-size: 11px;
+	font-weight: 700;
+}
+
+.cf-pin-notes__body {
+	padding-top: 2px;
+	color: #3c434a;
+	font-size: 13px;
+}
+
+.cf-detail__group-title {
+	margin: 0 0 10px;
+	color: #646970;
+	font-size: 11px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+.cf-detail__list {
+	margin: 0;
+}
+
+.cf-detail__item {
+	display: flex;
+	align-items: baseline;
+	gap: 10px;
+	padding: 9px 0;
+	border-top: 1px solid #f0f0f1;
+}
+
+.cf-detail__item:first-child {
+	border-top: 0;
+}
+
+.cf-detail__item dt {
+	display: flex;
+	align-items: center;
+	gap: 7px;
+	flex: 0 0 160px;
+	color: #646970;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+.cf-detail__item dt .dashicons {
+	flex: 0 0 auto;
+	width: 16px;
+	height: 16px;
+	font-size: 16px;
+	color: #8c8f94;
+}
+
+.cf-detail__item dd {
+	margin: 0;
+	min-width: 0;
+	overflow-wrap: break-word;
+	color: #1d2327;
+	font-size: 13px;
+}
+
+@media (max-width: 782px) {
+	/* Force the stack explicitly rather than relying on the two columns'
+	 * flex-basis (320px each) to overflow and wrap on their own — at
+	 * viewport widths just under 782px there's still enough room for both
+	 * 320px columns side by side, so wrapping wouldn't actually kick in
+	 * until much narrower than intended. */
+	.cf-detail__body {
+		flex-direction: column;
+	}
+
+	.cf-detail__col--screenshot,
+	.cf-detail__col--info {
+		max-width: 100%;
+		flex-basis: auto;
+	}
+
+	.cf-detail__item {
+		flex-direction: column;
+		gap: 2px;
+	}
+
+	.cf-detail__item dt {
+		flex-basis: auto;
+	}
+}

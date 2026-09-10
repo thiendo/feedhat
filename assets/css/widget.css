@@ -1,0 +1,608 @@
+/* FeedHat — front-end widget styles. Scoped under cf- prefix to avoid theme collisions. */
+
+.cf-launcher {
+	position: fixed;
+	z-index: 2147483000;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	border: 0;
+	border-radius: 999px;
+	background: var(--cf-color, #e63946);
+	color: #fff;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	line-height: 1.2;
+	cursor: pointer;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+	transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+}
+
+.cf-launcher:hover,
+.cf-launcher:focus-visible {
+	transform: translateY(-1px);
+	box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+}
+
+.cf-launcher .cf-btn-icon svg {
+	display: block;
+	width: 18px;
+	height: 18px;
+}
+
+/* --cf-offset-x/-y are set inline per-button in buildLauncher() (widget.js)
+ * from the "Distance from edge" settings — configurable so a site already
+ * running another chat widget in the same corner can be nudged clear of it,
+ * rather than the two stacking on top of each other. Defaults here (20px)
+ * only matter if that inline value is ever missing. */
+.cf-pos-bottom-right { right: var(--cf-offset-x, 20px); bottom: var(--cf-offset-y, 20px); }
+.cf-pos-bottom-left  { left: var(--cf-offset-x, 20px);  bottom: var(--cf-offset-y, 20px); }
+.cf-pos-top-right    { right: var(--cf-offset-x, 20px); top: var(--cf-offset-y, 20px); }
+.cf-pos-top-left     { left: var(--cf-offset-x, 20px);  top: var(--cf-offset-y, 20px); }
+
+/* Middle-left/-right: vertically centered on the side edge — a spot corner
+ * chat widgets essentially never use, so it's a reliable way to avoid them
+ * entirely rather than just offsetting within the same corner. */
+.cf-pos-middle-right { right: var(--cf-offset-x, 20px); top: 50%; transform: translateY(-50%); }
+.cf-pos-middle-left  { left: var(--cf-offset-x, 20px);  top: 50%; transform: translateY(-50%); }
+
+/* The generic :hover/:focus-visible transform above would otherwise replace
+ * (not add to) the centering transform on these two — re-declared after it
+ * so source order picks this at equal specificity. */
+.cf-pos-middle-right:hover,
+.cf-pos-middle-right:focus-visible,
+.cf-pos-middle-left:hover,
+.cf-pos-middle-left:focus-visible {
+	transform: translateY(-50%) translateY(-1px);
+}
+
+/* Sizes — "icon" style below overrides these with a fixed square/circle
+ * instead of padding, since it has no label text to size around. */
+.cf-size-small  { padding: 7px 14px;  font-size: 12px; }
+.cf-size-medium { padding: 10px 18px; font-size: 14px; }
+.cf-size-large  { padding: 13px 23px; font-size: 16px; }
+
+.cf-size-small .cf-btn-icon svg  { width: 14px; height: 14px; }
+.cf-size-large .cf-btn-icon svg  { width: 20px; height: 20px; }
+
+/* Style: "label" — text only, no icon (the plugin's original look). */
+/* Style: "pill" — icon + label, filled (the default; no extra rule needed
+ * beyond the base .cf-launcher styles above). */
+
+/* Style: "icon" — a round icon-only FAB; label moves to a hover/focus
+ * tooltip (data-tooltip, set in buildLauncher()) instead of visible text. */
+.cf-style-icon {
+	padding: 0;
+}
+
+.cf-style-icon.cf-size-small  { width: 42px; height: 42px; }
+.cf-style-icon.cf-size-medium { width: 54px; height: 54px; }
+.cf-style-icon.cf-size-large  { width: 64px; height: 64px; }
+
+.cf-style-icon.cf-size-small .cf-btn-icon svg  { width: 18px; height: 18px; }
+.cf-style-icon.cf-size-medium .cf-btn-icon svg { width: 22px; height: 22px; }
+.cf-style-icon.cf-size-large .cf-btn-icon svg  { width: 26px; height: 26px; }
+
+.cf-style-icon[data-tooltip]::after {
+	content: attr(data-tooltip);
+	position: absolute;
+	right: 50%;
+	transform: translateX(50%);
+	padding: 4px 9px;
+	border-radius: 6px;
+	background: #1a1a1a;
+	color: #fff;
+	font-size: 11px;
+	font-weight: 600;
+	white-space: nowrap;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.12s ease;
+}
+
+/* Tooltip on the side with room to grow: above a bottom-corner button,
+ * below a top-corner one. */
+.cf-style-icon.cf-pos-bottom-right[data-tooltip]::after,
+.cf-style-icon.cf-pos-bottom-left[data-tooltip]::after {
+	bottom: calc(100% + 10px);
+}
+
+.cf-style-icon.cf-pos-top-right[data-tooltip]::after,
+.cf-style-icon.cf-pos-top-left[data-tooltip]::after {
+	top: calc(100% + 10px);
+}
+
+.cf-style-icon.cf-pos-middle-right[data-tooltip]::after {
+	top: 50%;
+	right: calc(100% + 10px);
+	left: auto;
+	transform: translateY(-50%);
+}
+
+.cf-style-icon.cf-pos-middle-left[data-tooltip]::after {
+	top: 50%;
+	left: calc(100% + 10px);
+	right: auto;
+	transform: translateY(-50%);
+}
+
+.cf-style-icon[data-tooltip]:hover::after,
+.cf-style-icon[data-tooltip]:focus-visible::after {
+	opacity: 1;
+}
+
+/* Style: "outline" — same icon + label layout as "pill", but ghosted. */
+.cf-style-outline {
+	background: #fff;
+	color: var(--cf-color, #e63946);
+	border: 2px solid var(--cf-color, #e63946);
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cf-style-outline:hover,
+.cf-style-outline:focus-visible {
+	background: var(--cf-color, #e63946);
+	color: #fff;
+}
+
+/* Style: "tab" — icon + label like "pill", but square-cornered and, by
+ * default, flush against whichever edge it's pinned to (set "Distance from
+ * edge" to 0 for a fully docked look) — flattening only the corners that
+ * actually touch that edge. Pairs especially well with the middle-left/
+ * middle-right positions, where the label also turns vertical. */
+.cf-style-tab {
+	border-radius: 8px;
+}
+
+.cf-style-tab.cf-pos-bottom-right,
+.cf-style-tab.cf-pos-top-right,
+.cf-style-tab.cf-pos-middle-right {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.cf-style-tab.cf-pos-bottom-left,
+.cf-style-tab.cf-pos-top-left,
+.cf-style-tab.cf-pos-middle-left {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+/* Icon stacked above a vertical label reads as a proper side tab — the
+ * horizontal icon+label row every other style uses doesn't fit a strip this
+ * narrow. Overrides the size-based padding on purpose (a single, comfortable
+ * size for the vertical layout, regardless of the Size setting). */
+.cf-style-tab.cf-pos-middle-right,
+.cf-style-tab.cf-pos-middle-left {
+	flex-direction: column;
+	padding: 16px 9px;
+}
+
+.cf-style-tab.cf-pos-middle-right .cf-launcher__label,
+.cf-style-tab.cf-pos-middle-left .cf-launcher__label {
+	writing-mode: vertical-rl;
+}
+
+.cf-style-tab.cf-pos-middle-right .cf-btn-icon,
+.cf-style-tab.cf-pos-middle-left .cf-btn-icon {
+	transform: rotate(90deg);
+}
+
+.cf-overlay {
+	position: fixed;
+	inset: 0;
+	z-index: 2147483001;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	background: rgba(15, 15, 20, 0.55);
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.cf-modal {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 720px;
+	max-height: 90vh;
+	background: #fff;
+	color: #1a1a1a;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+}
+
+.cf-modal__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 14px 18px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.cf-modal__title {
+	margin: 0;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.cf-modal__close {
+	border: 0;
+	background: transparent;
+	font-size: 20px;
+	line-height: 1;
+	cursor: pointer;
+	color: #666;
+	padding: 4px 8px;
+	border-radius: 6px;
+}
+
+.cf-modal__close:hover { background: #f0f0f0; color: #111; }
+
+.cf-modal__body {
+	overflow-y: auto;
+	/* overflow-y: auto alone makes the UA compute overflow-x as auto too
+	 * (CSS2.1 §11.1.1), so any sub-pixel width overflow (e.g. the vertical
+	 * scrollbar itself shrinking the content box) was enough to trigger a
+	 * horizontal scrollbar even though nothing here is meant to scroll
+	 * sideways — only .cf-canvas-wrap should, internally, for oversized
+	 * screenshots. */
+	overflow-x: hidden;
+	padding: 16px 18px;
+}
+
+.cf-toolbar {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 2px;
+	width: fit-content;
+	max-width: 100%;
+	margin: 0 auto 14px;
+	padding: 6px;
+	background: #fff;
+	border: 1px solid #ececec;
+	border-radius: 999px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.cf-toolbar__divider {
+	width: 1px;
+	height: 22px;
+	margin: 0 4px;
+	background: #e5e5e5;
+	flex-shrink: 0;
+}
+
+.cf-tool-btn {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 34px;
+	height: 34px;
+	border: 0;
+	background: none;
+	border-radius: 999px;
+	cursor: pointer;
+	color: #555;
+	transition: background-color 0.12s ease, color 0.12s ease;
+}
+
+.cf-tool-btn:hover,
+.cf-tool-btn:focus-visible {
+	background: #f2f2f4;
+	color: #1a1a1a;
+}
+
+.cf-tool-btn.is-active {
+	background: var(--cf-brand-color, #1a1a1a);
+	color: #fff;
+}
+
+/* A dark, rounded bubble tooltip on hover/focus — every toolbar button
+ * carries its label in data-tooltip (see appendIconLabel()) instead of
+ * showing it inline, so the toolbar stays compact but the label is still
+ * available to sighted users on hover and to screen readers via aria-label.
+ * Below the button, not above: the toolbar sits right at the top of the
+ * scrollable .cf-modal__body, so a tooltip positioned above it has no room
+ * and gets clipped by that container's own overflow. */
+.cf-tool-btn[data-tooltip]::after {
+	content: attr(data-tooltip);
+	position: absolute;
+	z-index: 30;
+	top: calc(100% + 8px);
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 4px 9px;
+	border-radius: 6px;
+	background: #1a1a1a;
+	color: #fff;
+	font-size: 11px;
+	font-weight: 600;
+	white-space: nowrap;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.12s ease;
+}
+
+.cf-tool-btn[data-tooltip]:hover::after,
+.cf-tool-btn[data-tooltip]:focus-visible::after {
+	opacity: 1;
+}
+
+.cf-btn-icon {
+	display: inline-flex;
+	line-height: 0;
+}
+
+.cf-btn-icon svg {
+	display: block;
+}
+
+.cf-color-input {
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	border: 0;
+	/* A full circle clips a native color-swatch <input> inconsistently
+	 * across browsers (Firefox especially) — a soft square stays round
+	 * enough to match the pill toolbar without that risk. */
+	border-radius: 8px;
+	background: none;
+	cursor: pointer;
+}
+
+.cf-canvas-wrap {
+	position: relative;
+	width: 100%;
+	max-height: 45vh;
+	overflow: auto;
+	border: 1px solid #e0e0e0;
+	border-radius: 6px;
+	background: repeating-conic-gradient(#f3f3f3 0% 25%, #fff 0% 50%) 50% / 16px 16px;
+	margin-bottom: 12px;
+}
+
+.cf-text-input {
+	position: absolute;
+	z-index: 5;
+	min-width: 60px;
+	padding: 1px 4px;
+	border: 1px dashed #666;
+	border-radius: 2px;
+	background: rgba(255, 255, 255, 0.85);
+	font-family: sans-serif;
+	line-height: 1.2;
+}
+
+.cf-canvas-wrap canvas {
+	display: block;
+	touch-action: none;
+	cursor: crosshair;
+	max-width: 100%;
+}
+
+.cf-capture-status {
+	padding: 24px 12px;
+	text-align: center;
+	color: #666;
+	font-size: 13px;
+}
+
+.cf-field {
+	margin-bottom: 14px;
+}
+
+.cf-field label {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 12px;
+	font-weight: 600;
+	color: #6b6b6b;
+}
+
+.cf-field textarea,
+.cf-field input[type="text"],
+.cf-field input[type="email"] {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 9px 11px;
+	font-size: 14px;
+	border: 1px solid #d8d8d8;
+	border-radius: 8px;
+	font-family: inherit;
+	transition: border-color 0.12s ease, box-shadow 0.12s ease;
+}
+
+.cf-field textarea:focus,
+.cf-field input[type="text"]:focus,
+.cf-field input[type="email"]:focus {
+	outline: none;
+	border-color: var(--cf-brand-color, #1a1a1a);
+	/* A fixed neutral tone rather than a translucent version of the dynamic
+	 * brand color — keeps this working in browsers without CSS relative
+	 * color syntax (rgb(from ...)) support. */
+	box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.08);
+}
+
+.cf-field textarea {
+	min-height: 80px;
+	resize: vertical;
+}
+
+/* Name + Email sit side by side — both optional/short, so a single stacked
+ * column each felt like more scrolling than the content needed. Wraps to
+ * stacked on its own on a narrow panel, no separate mobile override needed.
+ * The top margin gives it a little breathing room from the feedback content
+ * above, so it reads as its own, secondary group. */
+.cf-field-row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	margin-top: 4px;
+	margin-bottom: 14px;
+}
+
+.cf-field-row .cf-field {
+	flex: 1 1 140px;
+	margin-bottom: 0;
+}
+
+.cf-captcha {
+	margin-bottom: 12px;
+}
+
+.cf-honeypot {
+	position: absolute;
+	left: -9999px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+.cf-message {
+	margin: 0 0 12px;
+	padding: 8px 12px;
+	border-radius: 6px;
+	font-size: 13px;
+}
+
+.cf-message.is-error {
+	background: #fdecea;
+	color: #a02a2a;
+}
+
+.cf-message.is-success {
+	background: #e9f7ef;
+	color: #1e6b3a;
+}
+
+.cf-tracking-link {
+	display: inline-block;
+	margin-top: 6px;
+	color: inherit;
+	font-weight: 600;
+	text-decoration: underline;
+}
+
+.cf-modal__footer {
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+	padding: 14px 18px;
+	border-top: 1px solid #e5e5e5;
+}
+
+.cf-btn {
+	border-radius: 6px;
+	padding: 9px 16px;
+	font-size: 14px;
+	font-weight: 600;
+	cursor: pointer;
+	border: 1px solid transparent;
+}
+
+.cf-btn-secondary {
+	background: #fff;
+	border-color: #d8d8d8;
+	color: #333;
+}
+
+.cf-btn-primary {
+	background: var(--cf-brand-color, #1a1a1a);
+	color: #fff;
+}
+
+.cf-btn-primary:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+
+.cf-btn-primary.is-loading::before {
+	content: "";
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin-right: 7px;
+	vertical-align: -2px;
+	border: 2px solid rgba(255, 255, 255, 0.4);
+	border-top-color: #fff;
+	border-radius: 50%;
+	animation: cf-spin 0.6s linear infinite;
+}
+
+@keyframes cf-spin {
+	to { transform: rotate(360deg); }
+}
+
+.cf-tool-btn:disabled,
+.cf-color-input:disabled {
+	opacity: 0.4;
+	cursor: not-allowed;
+}
+
+.cf-field textarea:disabled,
+.cf-field input:disabled {
+	background: #f7f7f7;
+	color: #888;
+	cursor: not-allowed;
+}
+
+.cf-modal__brand {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	margin-right: auto;
+	font-size: 12px;
+	color: #767676;
+}
+
+.cf-modal__brand-logo {
+	width: 18px;
+	height: 18px;
+	object-fit: contain;
+	border-radius: 3px;
+}
+
+/* Pro: small floating editor for a pin's own title/description — see
+ * openPinNoteEditor() in widget.js. Fixed to the viewport (not the canvas),
+ * since it floats over the modal rather than being drawn onto the image. */
+
+.cf-pin-editor {
+	position: fixed;
+	z-index: 2147483002;
+	width: 240px;
+	padding: 10px;
+	background: #fff;
+	color: #1a1a1a;
+	border-radius: 10px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.cf-pin-editor__desc {
+	box-sizing: border-box;
+	width: 100%;
+	min-height: 70px;
+	padding: 6px 8px;
+	border: 0;
+	font-size: 13px;
+	font-family: inherit;
+	color: #555;
+	resize: vertical;
+}
+
+.cf-pin-editor__desc:focus {
+	outline: none;
+}
+
+@media (max-width: 480px) {
+	.cf-overlay { padding: 0; }
+	.cf-modal { max-width: 100%; max-height: 100%; height: 100%; border-radius: 0; }
+	.cf-canvas-wrap { max-height: 35vh; }
+	.cf-pin-editor { width: calc(100vw - 24px); }
+}

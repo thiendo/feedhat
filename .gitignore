@@ -1,0 +1,16 @@
+.DS_Store
+dist/
+
+# Local-only: Pro package, Freemius SDK, and internal notes.
+# The public GitHub / WordPress.org tree is Free only.
+includes/pro/
+vendor/freemius/
+build/build-full.sh
+assets/css/kanban.css
+assets/js/kanban.js
+assets/js/note-annotator.js
+languages/*.po
+languages/*.mo
+CLAUDE.md
+CLAUDE1.md
+feedback-plugin-spec_2.md

@@ -1,0 +1,1433 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the FeedHat package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: FeedHat\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-07 13:53+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: includes/core/class-widget-render.php:115
+#: includes/core/class-widget-render.php:133
+msgid "Send feedback"
+msgstr ""
+
+#: includes/core/class-widget-render.php:116
+msgid "Close"
+msgstr ""
+
+#: includes/core/class-widget-render.php:117 includes/pro/class-kanban.php:173
+msgid "Rectangle"
+msgstr ""
+
+#: includes/core/class-widget-render.php:118 includes/pro/class-kanban.php:174
+msgid "Arrow"
+msgstr ""
+
+#: includes/core/class-widget-render.php:119 includes/pro/class-kanban.php:175
+msgid "Pen"
+msgstr ""
+
+#: includes/core/class-widget-render.php:120 includes/pro/class-kanban.php:176
+msgid "Text"
+msgstr ""
+
+#: includes/core/class-widget-render.php:121
+msgid "Pin"
+msgstr ""
+
+#: includes/core/class-widget-render.php:122
+msgid "Describe in more detail if needed"
+msgstr ""
+
+#: includes/core/class-widget-render.php:123 includes/pro/class-kanban.php:177
+msgid "Move"
+msgstr ""
+
+#: includes/core/class-widget-render.php:124 includes/pro/class-kanban.php:178
+msgid "Undo"
+msgstr ""
+
+#: includes/core/class-widget-render.php:125 includes/pro/class-kanban.php:179
+msgid "Clear"
+msgstr ""
+
+#: includes/core/class-widget-render.php:126 includes/pro/class-kanban.php:180
+msgid "Color"
+msgstr ""
+
+#: includes/core/class-widget-render.php:127
+msgid "Describe the issue…"
+msgstr ""
+
+#: includes/core/class-widget-render.php:128
+msgid "Your feedback"
+msgstr ""
+
+#: includes/core/class-widget-render.php:129 includes/pro/class-export.php:91
+msgid "Title"
+msgstr ""
+
+#: includes/core/class-widget-render.php:130
+msgid "Title (optional)"
+msgstr ""
+
+#: includes/core/class-widget-render.php:131
+msgid "Name (optional)"
+msgstr ""
+
+#: includes/core/class-widget-render.php:132
+msgid "Email (optional)"
+msgstr ""
+
+#: includes/core/class-widget-render.php:134
+msgid "Sending…"
+msgstr ""
+
+#: includes/core/class-widget-render.php:135 includes/pro/class-kanban.php:182
+msgid "Cancel"
+msgstr ""
+
+#: includes/core/class-widget-render.php:136
+msgid "Thanks! Your feedback has been sent."
+msgstr ""
+
+#: includes/core/class-widget-render.php:137
+msgid "Track the status of this feedback →"
+msgstr ""
+
+#: includes/core/class-widget-render.php:138
+msgid "Please describe the issue before sending."
+msgstr ""
+
+#: includes/core/class-widget-render.php:139
+msgid "Please wait a moment for verification and try again."
+msgstr ""
+
+#: includes/core/class-widget-render.php:140
+msgid "Something went wrong. Please try again."
+msgstr ""
+
+#: includes/core/class-widget-render.php:141
+msgid "Could not reach the server. Please check your connection and try again."
+msgstr ""
+
+#: includes/core/class-widget-render.php:142
+msgid ""
+"Could not capture a screenshot automatically, but you can still send your "
+"note."
+msgstr ""
+
+#: includes/core/class-widget-render.php:143
+msgid "Capturing screenshot…"
+msgstr ""
+
+#: includes/core/class-widget-render.php:144
+msgid "Image unavailable"
+msgstr ""
+
+#: includes/core/class-cpt-feedback.php:29
+msgctxt "post type general name"
+msgid "Feedback"
+msgstr ""
+
+#: includes/core/class-cpt-feedback.php:30
+msgctxt "post type singular name"
+msgid "Feedback"
+msgstr ""
+
+#: includes/core/class-cpt-feedback.php:31
+msgctxt "admin menu"
+msgid "FeedHat"
+msgstr ""
+
+#: includes/core/class-cpt-feedback.php:32
+msgctxt "add new on admin bar"
+msgid "Feedback"
+msgstr ""
+
+#: includes/core/class-cpt-feedback.php:33
+msgid "Add New"
+msgstr ""
+
+#: includes/core/class-cpt-feedback.php:34
+msgid "Add New Feedback"
+msgstr ""
+
+#: includes/core/class-cpt-feedback.php:35
+msgid "Edit Feedback"
+msgstr ""
+
+#: includes/core/class-cpt-feedback.php:36
+msgid "New Feedback"
+msgstr ""
+
+#: includes/core/class-cpt-feedback.php:37
+msgid "View Feedback"
+msgstr ""
+
+#: includes/core/class-cpt-feedback.php:38
+msgid "Search Feedback"
+msgstr ""
+
+#: includes/core/class-cpt-feedback.php:39
+msgid "No feedback found."
+msgstr ""
+
+#: includes/core/class-cpt-feedback.php:40
+#: includes/core/class-admin-list.php:113
+#: includes/core/class-admin-list.php:114
+msgid "All Feedback"
+msgstr ""
+
+#: includes/core/class-admin-list.php:53
+msgid "You do not have permission to access FeedHat."
+msgstr ""
+
+#: includes/core/class-admin-list.php:73 includes/core/class-admin-list.php:164
+#: includes/core/class-admin-bar.php:60 includes/core/class-settings.php:51
+#: includes/core/class-settings.php:448 includes/core/class-settings.php:791
+msgid "Feedback"
+msgstr ""
+
+#: includes/core/class-admin-list.php:86 includes/core/class-settings.php:256
+#: includes/pro/class-white-label.php:150
+msgid "FeedHat"
+msgstr ""
+
+#: includes/core/class-admin-list.php:163
+msgid "Screenshot"
+msgstr ""
+
+#: includes/core/class-admin-list.php:175 includes/pro/class-export.php:92
+msgid "Note"
+msgstr ""
+
+#: includes/core/class-admin-list.php:176
+#: includes/core/class-admin-list.php:464 includes/core/class-settings.php:518
+#: includes/pro/class-targeting-advanced.php:308
+#: includes/pro/class-export.php:93
+msgid "Page"
+msgstr ""
+
+#: includes/core/class-admin-list.php:177
+msgid "Browser / OS"
+msgstr ""
+
+#: includes/core/class-admin-list.php:178 includes/pro/class-export.php:89
+msgid "Status"
+msgstr ""
+
+#: includes/core/class-admin-list.php:179 includes/pro/class-export.php:90
+msgid "Submitted"
+msgstr ""
+
+#: includes/core/class-admin-list.php:223
+msgid "No screenshot"
+msgstr ""
+
+#: includes/core/class-admin-list.php:235
+msgid "Feedback screenshot"
+msgstr ""
+
+#: includes/core/class-admin-list.php:304
+msgid "Unknown"
+msgstr ""
+
+#. translators: %s: screen resolution, e.g. "1920x1080".
+#: includes/core/class-admin-list.php:311
+#, php-format
+msgid "Screen %s"
+msgstr ""
+
+#. translators: %s: browser viewport size, e.g. "1488x1135".
+#: includes/core/class-admin-list.php:316
+#, php-format
+msgid "Viewport %s"
+msgstr ""
+
+#: includes/core/class-admin-list.php:367
+msgid "Mark as New"
+msgstr ""
+
+#: includes/core/class-admin-list.php:368
+msgid "Mark Resolved"
+msgstr ""
+
+#: includes/core/class-admin-list.php:405 includes/pro/class-kanban.php:77
+msgid "New"
+msgstr ""
+
+#: includes/core/class-admin-list.php:406 includes/pro/class-kanban.php:79
+msgid "Resolved"
+msgstr ""
+
+#: includes/core/class-admin-list.php:419
+msgid "Feedback Details"
+msgstr ""
+
+#: includes/core/class-admin-list.php:461
+msgid "Page & environment"
+msgstr ""
+
+#: includes/core/class-admin-list.php:465 includes/pro/class-export.php:96
+msgid "Browser"
+msgstr ""
+
+#: includes/core/class-admin-list.php:466 includes/pro/class-export.php:97
+msgid "Operating System"
+msgstr ""
+
+#: includes/core/class-admin-list.php:467 includes/pro/class-export.php:98
+msgid "Screen size"
+msgstr ""
+
+#: includes/core/class-admin-list.php:468 includes/pro/class-export.php:99
+msgid "Viewport"
+msgstr ""
+
+#: includes/core/class-admin-list.php:469 includes/pro/class-export.php:100
+msgid "WordPress version"
+msgstr ""
+
+#: includes/core/class-admin-list.php:488
+msgid "No screenshot was captured for this feedback."
+msgstr ""
+
+#: includes/core/class-admin-list.php:498
+msgid "Feedback screenshot — click to view full size"
+msgstr ""
+
+#: includes/core/class-admin-list.php:614
+msgid "Anonymous (not logged in)"
+msgstr ""
+
+#: includes/core/class-admin-list.php:628
+msgid "Invalid feedback status request."
+msgstr ""
+
+#: includes/core/class-admin-list.php:632 includes/core/class-settings.php:740
+#: includes/pro/class-export.php:51
+msgid "You are not allowed to do that."
+msgstr ""
+
+#: includes/core/class-admin-list.php:670
+msgid "FeedHat:"
+msgstr ""
+
+#. translators: %d: maximum number of stored feedback entries allowed on the Free plan.
+#: includes/core/class-admin-list.php:674
+#, php-format
+msgid ""
+"You have reached the %d feedback limit (Free). Delete old feedback or "
+"upgrade to Pro to keep collecting new submissions."
+msgstr ""
+
+#: includes/core/class-license.php:158
+msgid "FeedHat: DEV MODE is active."
+msgstr ""
+
+#: includes/core/class-license.php:159
+msgid ""
+"FEEDHAT_PRO_DEV_MODE is set in wp-config.php, bypassing the license check — "
+"every Pro feature is unlocked regardless of license status. Remove this "
+"constant before deploying to production."
+msgstr ""
+
+#: includes/core/class-license.php:176
+msgid ""
+"Your FeedHat Pro license is inactive or has expired. Advanced "
+"targeting, multi-recipient email, webhooks, the Kanban board, and white-"
+"label are paused until you renew — all of your existing feedback data is "
+"untouched and still fully viewable."
+msgstr ""
+
+#: includes/core/class-license.php:178
+msgid "Renew your license"
+msgstr ""
+
+#: includes/core/class-tracking.php:62
+msgid "Track Your Feedback"
+msgstr ""
+
+#: includes/core/class-tracking.php:112
+msgid ""
+"Use the tracking link you were given when you submitted feedback to see its "
+"status here."
+msgstr ""
+
+#: includes/core/class-tracking.php:127
+msgid ""
+"We couldn't find feedback for this tracking link. It may have been removed."
+msgstr ""
+
+#. translators: %s: submission date.
+#: includes/core/class-tracking.php:144
+#, php-format
+msgid "Submitted %s"
+msgstr ""
+
+#. translators: Hidden accessibility text. %s: Number of new feedback entries.
+#: includes/core/class-admin-bar.php:50
+#, php-format
+msgid "%s new feedback entry"
+msgid_plural "%s new feedback entries"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/core/class-admin-bar.php:87
+msgid "View all feedback"
+msgstr ""
+
+#: includes/core/class-admin-bar.php:124
+msgid "Anonymous"
+msgstr ""
+
+#. translators: 1: reporter name, 2: time ago, e.g. "2 hours".
+#: includes/core/class-admin-bar.php:140
+#, php-format
+msgid "%1$s · %2$s ago"
+msgstr ""
+
+#. translators: %s: site name.
+#: includes/core/class-email-notify.php:63
+#: includes/pro/class-multi-recipient.php:140
+#, php-format
+msgid "[%s] New feedback received"
+msgstr ""
+
+#: includes/core/class-email-notify.php:75
+msgid "New feedback was submitted on your site:"
+msgstr ""
+
+#. translators: %s: page URL the feedback was submitted from.
+#: includes/core/class-email-notify.php:81
+#: includes/pro/class-multi-recipient.php:160
+#, php-format
+msgid "Page: %s"
+msgstr ""
+
+#. translators: 1: browser, 2: operating system.
+#: includes/core/class-email-notify.php:86
+#: includes/pro/class-multi-recipient.php:165
+#, php-format
+msgid "Browser / OS: %1$s / %2$s"
+msgstr ""
+
+#. translators: 1: screen resolution, 2: browser viewport size.
+#: includes/core/class-email-notify.php:92
+#: includes/pro/class-multi-recipient.php:171
+#, php-format
+msgid "Screen / Viewport: %1$s / %2$s"
+msgstr ""
+
+#. translators: %s: wp-admin feedback list link.
+#. translators: %s: wp-admin edit link.
+#: includes/core/class-email-notify.php:99
+#: includes/pro/class-multi-recipient.php:178
+#, php-format
+msgid "Manage feedback: %s"
+msgstr ""
+
+#: includes/core/class-settings.php:77
+msgid "FeedHat Settings"
+msgstr ""
+
+#: includes/core/class-settings.php:78
+msgid "Settings"
+msgstr ""
+
+#: includes/core/class-settings.php:139
+msgid "Bottom right"
+msgstr ""
+
+#: includes/core/class-settings.php:140
+msgid "Bottom left"
+msgstr ""
+
+#: includes/core/class-settings.php:141
+msgid "Top right"
+msgstr ""
+
+#: includes/core/class-settings.php:142
+msgid "Top left"
+msgstr ""
+
+#: includes/core/class-settings.php:143
+msgid "Middle right (edge)"
+msgstr ""
+
+#: includes/core/class-settings.php:144
+msgid "Middle left (edge)"
+msgstr ""
+
+#: includes/core/class-settings.php:153
+msgid "Icon + label (filled)"
+msgstr ""
+
+#: includes/core/class-settings.php:154
+msgid "Icon + label (outlined)"
+msgstr ""
+
+#: includes/core/class-settings.php:155
+msgid "Icon only"
+msgstr ""
+
+#: includes/core/class-settings.php:156
+msgid "Text only"
+msgstr ""
+
+#: includes/core/class-settings.php:157
+msgid "Edge tab"
+msgstr ""
+
+#: includes/core/class-settings.php:166
+msgid "Small"
+msgstr ""
+
+#: includes/core/class-settings.php:167
+msgid "Medium"
+msgstr ""
+
+#: includes/core/class-settings.php:168
+msgid "Large"
+msgstr ""
+
+#: includes/core/class-settings.php:200
+msgid "General"
+msgstr ""
+
+#: includes/core/class-settings.php:204
+msgid "Branding"
+msgstr ""
+
+#: includes/core/class-settings.php:208 includes/core/class-settings.php:478
+msgid "Targeting"
+msgstr ""
+
+#: includes/core/class-settings.php:212
+msgid "Team"
+msgstr ""
+
+#: includes/core/class-settings.php:216
+msgid "Notifications"
+msgstr ""
+
+#: includes/core/class-settings.php:220
+msgid "Security"
+msgstr ""
+
+#: includes/core/class-settings.php:224 includes/core/class-settings.php:719
+msgid "Data"
+msgstr ""
+
+#: includes/core/class-settings.php:235 includes/pro/class-kanban.php:221
+msgid "You do not have permission to access this page."
+msgstr ""
+
+#: includes/core/class-settings.php:258
+msgid "See it. Mark it. Fix it — without leaving the page."
+msgstr ""
+
+#: includes/core/class-settings.php:261
+msgid "Settings saved."
+msgstr ""
+
+#: includes/core/class-settings.php:337
+msgid "Save Settings"
+msgstr ""
+
+#: includes/core/class-settings.php:351
+msgid ""
+"Custom branding — your own logo, display name, and accent color on the "
+"widget and its emails — is available in FeedHat Pro."
+msgstr ""
+
+#: includes/core/class-settings.php:364
+msgid ""
+"Auto-assigning feedback to a team member and a daily SLA reminder digest are "
+"available in FeedHat Pro."
+msgstr ""
+
+#: includes/core/class-settings.php:374
+msgid "Widget display"
+msgstr ""
+
+#: includes/core/class-settings.php:377
+msgid "Enable widget"
+msgstr ""
+
+#: includes/core/class-settings.php:381
+msgid "Show the feedback button on the front end"
+msgstr ""
+
+#: includes/core/class-settings.php:386
+msgid "Button position"
+msgstr ""
+
+#: includes/core/class-settings.php:395
+msgid ""
+"\"Middle\" pins the button to the vertical center of the left/right edge "
+"instead of a corner — a spot corner-dwelling chat widgets (Messenger, Zalo, "
+"Tawk.to…) essentially never use."
+msgstr ""
+
+#: includes/core/class-settings.php:399
+msgid "Distance from edge"
+msgstr ""
+
+#: includes/core/class-settings.php:401
+msgid "Horizontal"
+msgstr ""
+
+#: includes/core/class-settings.php:404
+msgid "Vertical"
+msgstr ""
+
+#: includes/core/class-settings.php:406
+msgid ""
+"How far from the corner/edge the button sits. Increase these if another "
+"widget already occupies that spot. Vertical is ignored for the two Middle "
+"positions (always centered)."
+msgstr ""
+
+#: includes/core/class-settings.php:410
+msgid "Button style"
+msgstr ""
+
+#: includes/core/class-settings.php:422
+msgid "Button size"
+msgstr ""
+
+#: includes/core/class-settings.php:434
+msgid "Button color"
+msgstr ""
+
+#: includes/core/class-settings.php:440
+msgid "Button label"
+msgstr ""
+
+#. translators: %s: default button label.
+#: includes/core/class-settings.php:447
+#, php-format
+msgid "Defaults to \"%s\"."
+msgstr ""
+
+#: includes/core/class-settings.php:455
+msgid "Preview"
+msgstr ""
+
+#: includes/core/class-settings.php:463
+msgid "Updates live as you change the options above."
+msgstr ""
+
+#: includes/core/class-settings.php:481
+msgid "Show widget on"
+msgstr ""
+
+#: includes/core/class-settings.php:486
+msgid "The whole site"
+msgstr ""
+
+#: includes/core/class-settings.php:491
+msgid "Only selected pages/posts"
+msgstr ""
+
+#: includes/core/class-settings.php:496
+msgid "Only via a URL parameter"
+msgstr ""
+
+#. translators: %d: maximum number of specific pages allowed on the Free plan.
+#: includes/core/class-settings.php:504
+#, php-format
+msgid ""
+"Choose up to %d pages or posts (Free plan limit). Ctrl/Cmd-click to select "
+"more than one."
+msgstr ""
+
+#. translators: 1: post title, 2: post type label.
+#: includes/core/class-settings.php:516
+#: includes/pro/class-targeting-advanced.php:306
+#, php-format
+msgid "%1$s (%2$s)"
+msgstr ""
+
+#: includes/core/class-settings.php:518
+#: includes/pro/class-targeting-advanced.php:308
+msgid "Post"
+msgstr ""
+
+#. translators: %s: the fixed ?feedhat=1 URL parameter.
+#: includes/core/class-settings.php:532
+#, php-format
+msgid ""
+"The widget shows only when a visitor adds %s to the page URL. This parameter "
+"name is fixed on the Free plan."
+msgstr ""
+
+#: includes/core/class-settings.php:538
+msgid ""
+"Upgrade to Pro to use your own custom parameter name and a secret value."
+msgstr ""
+
+#: includes/core/class-settings.php:553
+msgid "Email notifications"
+msgstr ""
+
+#: includes/core/class-settings.php:556
+msgid "Enable email notifications"
+msgstr ""
+
+#: includes/core/class-settings.php:560
+msgid "Email me when new feedback is submitted"
+msgstr ""
+
+#: includes/core/class-settings.php:565
+msgid "Notification email"
+msgstr ""
+
+#: includes/core/class-settings.php:569
+msgid ""
+"Sent through WordPress's own mail system (wp_mail) — if it does not arrive, "
+"check your site's SMTP configuration or install a dedicated SMTP plugin."
+msgstr ""
+
+#: includes/core/class-settings.php:574
+msgid "Admin toolbar notification"
+msgstr ""
+
+#: includes/core/class-settings.php:578
+msgid ""
+"Show a \"Feedback\" item in the WordPress admin toolbar (top bar) with a "
+"count and a list of new feedback"
+msgstr ""
+
+#: includes/core/class-settings.php:580
+msgid ""
+"A second, always-visible place to notice new feedback, on top of email and "
+"the sidebar menu badge — only appears while there is at least one new item."
+msgstr ""
+
+#: includes/core/class-settings.php:599
+msgid "Anti-spam"
+msgstr ""
+
+#: includes/core/class-settings.php:602
+msgid "Submission rate limit"
+msgstr ""
+
+#. translators: 1: number input for max submissions, 2: number input for the time window in minutes.
+#: includes/core/class-settings.php:607
+#, php-format
+msgid "Allow at most %1$s submissions per visitor every %2$s minutes."
+msgstr ""
+
+#: includes/core/class-settings.php:612
+msgid ""
+"Identified by IP address. Protects against a single visitor (or a simple "
+"script) flooding the form."
+msgstr ""
+
+#: includes/core/class-settings.php:616
+msgid "Minimum time before sending"
+msgstr ""
+
+#: includes/core/class-settings.php:619
+msgid "seconds"
+msgstr ""
+
+#: includes/core/class-settings.php:620
+msgid ""
+"Silently rejects a submission sent faster than this after the panel was "
+"opened — real visitors need at least a few seconds to write a note, so this "
+"mainly catches bots that submit instantly. Set to 0 to disable."
+msgstr ""
+
+#: includes/core/class-settings.php:624
+msgid "Honeypot field"
+msgstr ""
+
+#: includes/core/class-settings.php:626
+msgid ""
+"Always on — a hidden field invisible to real visitors but often auto-filled "
+"by bots. Not configurable."
+msgstr ""
+
+#: includes/core/class-settings.php:635
+msgid ""
+"CAPTCHA (Cloudflare Turnstile) for stronger bot protection is available in "
+"FeedHat Pro."
+msgstr ""
+
+#: includes/core/class-settings.php:653
+msgid "Feedback status tracking"
+msgstr ""
+
+#: includes/core/class-settings.php:656
+msgid "Tracking page"
+msgstr ""
+
+#: includes/core/class-settings.php:662
+msgid "edit page"
+msgstr ""
+
+#: includes/core/class-settings.php:665
+msgid "Not created yet — it will be the first time someone submits feedback."
+msgstr ""
+
+#. translators: %s: the [feedhat_track] shortcode tag.
+#: includes/core/class-settings.php:671
+#, php-format
+msgid ""
+"Every submission includes a private link where the reporter can check its "
+"status here, with no login needed. This page was created automatically — "
+"feel free to rename it, move it in your menu, or edit the surrounding "
+"content, as long as the %s shortcode itself stays somewhere on it."
+msgstr ""
+
+#: includes/core/class-settings.php:689
+msgid "Language"
+msgstr ""
+
+#: includes/core/class-settings.php:692
+#: includes/pro/class-language-override.php:102
+msgid "Widget language"
+msgstr ""
+
+#. translators: %s: current site locale, e.g. "vi" or "en_US".
+#: includes/core/class-settings.php:698
+#, php-format
+msgid "Currently following the site language: %s"
+msgstr ""
+
+#: includes/core/class-settings.php:705
+msgid ""
+"This is read-only on the Free plan. Upgrade to Pro to set the widget's "
+"language independently of the site language."
+msgstr ""
+
+#: includes/core/class-settings.php:722
+msgid "On uninstall"
+msgstr ""
+
+#: includes/core/class-settings.php:726
+msgid ""
+"Delete all feedback data (entries, screenshots, and settings) when this "
+"plugin is uninstalled"
+msgstr ""
+
+#: includes/core/class-settings.php:728
+msgid "Off by default so nothing is lost by accident."
+msgstr ""
+
+#: includes/core/class-capture.php:95
+msgid "Security check failed. Please reload the page and try again."
+msgstr ""
+
+#: includes/core/class-capture.php:116 includes/core/class-capture.php:126
+msgid "Unable to submit feedback."
+msgstr ""
+
+#: includes/core/class-capture.php:134
+msgid ""
+"You are submitting feedback too quickly. Please wait a moment and try again."
+msgstr ""
+
+#: includes/core/class-capture.php:152
+msgid "Verification failed. Please reload the page and try again."
+msgstr ""
+
+#: includes/core/class-capture.php:162
+msgid "Feedback is currently disabled on this site."
+msgstr ""
+
+#: includes/core/class-capture.php:172
+msgid "The feedback storage limit has been reached on this site."
+msgstr ""
+
+#: includes/core/class-capture.php:183
+msgid "Please describe the issue before submitting."
+msgstr ""
+
+#: includes/core/class-capture.php:225
+msgid "Could not save feedback. Please try again."
+msgstr ""
+
+#: includes/core/class-capture.php:405
+msgid "Screenshot support is unavailable on this server."
+msgstr ""
+
+#: includes/core/class-capture.php:421
+msgid "Screenshot format is not supported."
+msgstr ""
+
+#: includes/core/class-capture.php:432
+msgid "Screenshot data is corrupted."
+msgstr ""
+
+#: includes/core/class-capture.php:440
+msgid "Screenshot is too large."
+msgstr ""
+
+#: includes/core/class-capture.php:452
+msgid "Screenshot does not appear to be a valid image."
+msgstr ""
+
+#: includes/core/class-capture.php:464
+msgid "Screenshot resolution is too large to process."
+msgstr ""
+
+#: includes/core/class-capture.php:474
+msgid "Could not save the screenshot: the uploads directory is not available."
+msgstr ""
+
+#: includes/core/class-capture.php:490
+msgid "Could not create or write to the screenshot storage directory."
+msgstr ""
+
+#: includes/core/class-capture.php:516
+msgid "Screenshot could not be processed."
+msgstr ""
+
+#: includes/core/class-capture.php:544
+msgid "Could not save the screenshot."
+msgstr ""
+
+#. translators: 1: site name, 2: number of overdue feedback items.
+#: includes/pro/class-sla-reminder.php:144
+#, php-format
+msgid "[%1$s] %2$d feedback item(s) still open"
+msgstr ""
+
+#. translators: %d: number of days.
+#: includes/pro/class-sla-reminder.php:152
+#, php-format
+msgid "The following feedback has been open for more than %d days:"
+msgstr ""
+
+#. translators: 1: number of additional overdue items not listed above, 2: link to the Kanban board.
+#: includes/pro/class-sla-reminder.php:166
+#, php-format
+msgid "…and %1$d more — see the full board: %2$s"
+msgstr ""
+
+#: includes/pro/class-sla-reminder.php:186
+msgid "SLA reminder (Pro)"
+msgstr ""
+
+#: includes/pro/class-sla-reminder.php:189
+msgid "Enable SLA reminder"
+msgstr ""
+
+#: includes/pro/class-sla-reminder.php:193
+msgid "Send a daily digest email listing feedback that has been open too long"
+msgstr ""
+
+#: includes/pro/class-sla-reminder.php:198
+msgid "Threshold (days)"
+msgstr ""
+
+#: includes/pro/class-sla-reminder.php:201
+msgid ""
+"Feedback not yet Resolved (or Won't Fix, on the Kanban board) past this many "
+"days is included in the digest."
+msgstr ""
+
+#: includes/pro/class-sla-reminder.php:205
+msgid "Send digest to"
+msgstr ""
+
+#: includes/pro/class-targeting-advanced.php:271
+msgid "Advanced targeting (Pro)"
+msgstr ""
+
+#: includes/pro/class-targeting-advanced.php:274
+msgid "Enable advanced targeting"
+msgstr ""
+
+#: includes/pro/class-targeting-advanced.php:278
+msgid ""
+"Take over targeting with post types, taxonomies, URL patterns, and an "
+"unlimited page list (replaces Free's targeting above)"
+msgstr ""
+
+#: includes/pro/class-targeting-advanced.php:280
+msgid ""
+"The custom URL parameter below always works as an override, regardless of "
+"this setting."
+msgstr ""
+
+#: includes/pro/class-targeting-advanced.php:284
+msgid "Post types"
+msgstr ""
+
+#: includes/pro/class-targeting-advanced.php:293
+msgid "Show the widget on every entry of the selected post types."
+msgstr ""
+
+#: includes/pro/class-targeting-advanced.php:297
+msgid "Specific pages/posts"
+msgstr ""
+
+#: includes/pro/class-targeting-advanced.php:315
+msgid ""
+"No limit on the Pro plan (Free caps this at 5). Ctrl/Cmd-click to select "
+"more than one."
+msgstr ""
+
+#: includes/pro/class-targeting-advanced.php:319
+msgid "Taxonomy rules"
+msgstr ""
+
+#. translators: %s: example rule line, e.g. "product_cat:shirts,pants".
+#: includes/pro/class-targeting-advanced.php:326
+#, php-format
+msgid ""
+"One rule per line, format %s — shows the widget on any entry tagged with one "
+"of the listed term slugs."
+msgstr ""
+
+#: includes/pro/class-targeting-advanced.php:334
+msgid "URL patterns"
+msgstr ""
+
+#. translators: 1: include example, 2: exclude example.
+#: includes/pro/class-targeting-advanced.php:341
+#, php-format
+msgid ""
+"One rule per line, format %1$s or %2$s (%3$s matches any characters). "
+"Exclude rules always win over everything else."
+msgstr ""
+
+#: includes/pro/class-targeting-advanced.php:351
+msgid "Custom URL parameter name"
+msgstr ""
+
+#: includes/pro/class-targeting-advanced.php:357
+msgid "Custom URL parameter secret value"
+msgstr ""
+
+#: includes/pro/class-targeting-advanced.php:360
+msgid ""
+"Leave empty to accept any value (like Free's fixed ?feedhat=1). Set a "
+"secret value to make the link hard to guess."
+msgstr ""
+
+#: includes/pro/class-multi-recipient.php:154
+msgid "New feedback was submitted:"
+msgstr ""
+
+#: includes/pro/class-multi-recipient.php:210
+msgid "Email routing (Pro)"
+msgstr ""
+
+#: includes/pro/class-multi-recipient.php:213
+msgid "Enable multi-recipient routing"
+msgstr ""
+
+#: includes/pro/class-multi-recipient.php:217
+msgid ""
+"Take over email notifications with multiple recipients and URL-based routing "
+"(replaces Free's single-recipient email above)"
+msgstr ""
+
+#: includes/pro/class-multi-recipient.php:222
+msgid "Default recipients"
+msgstr ""
+
+#: includes/pro/class-multi-recipient.php:225
+msgid "One email address per line. Used whenever no route below matches."
+msgstr ""
+
+#: includes/pro/class-multi-recipient.php:229
+#: includes/pro/class-assignment.php:146
+msgid "Routes"
+msgstr ""
+
+#. translators: %s: example route line, e.g. "/shop/*|shop-team@example.com".
+#: includes/pro/class-multi-recipient.php:236
+#, php-format
+msgid ""
+"One route per line, format %s — first matching route wins, otherwise the "
+"default recipients above are used."
+msgstr ""
+
+#: includes/pro/class-export.php:42
+msgid "Export CSV"
+msgstr ""
+
+#: includes/pro/class-export.php:88
+msgid "ID"
+msgstr ""
+
+#: includes/pro/class-export.php:94
+msgid "Reporter name"
+msgstr ""
+
+#: includes/pro/class-export.php:95
+msgid "Reporter email"
+msgstr ""
+
+#: includes/pro/class-export.php:101
+msgid "Screenshot URL"
+msgstr ""
+
+#: includes/pro/class-export.php:102
+msgid "Pin notes"
+msgstr ""
+
+#: includes/pro/class-captcha.php:149
+msgid "CAPTCHA (Pro)"
+msgstr ""
+
+#: includes/pro/class-captcha.php:152
+msgid "Enable Cloudflare Turnstile"
+msgstr ""
+
+#: includes/pro/class-captcha.php:156
+msgid "Require a passed Turnstile challenge before a submission is accepted"
+msgstr ""
+
+#. translators: %s: link to the Cloudflare Turnstile dashboard.
+#: includes/pro/class-captcha.php:162
+#, php-format
+msgid "Free at %s — usually invisible to real visitors, no puzzle to solve."
+msgstr ""
+
+#: includes/pro/class-captcha.php:170
+msgid "Site key"
+msgstr ""
+
+#: includes/pro/class-captcha.php:176
+msgid "Secret key"
+msgstr ""
+
+#: includes/pro/class-webhook.php:191
+msgid "Webhooks (Pro)"
+msgstr ""
+
+#: includes/pro/class-webhook.php:194
+msgid "Enable webhooks"
+msgstr ""
+
+#: includes/pro/class-webhook.php:198
+msgid "Send new feedback to Slack, Discord, or a custom URL"
+msgstr ""
+
+#: includes/pro/class-webhook.php:203
+msgid "Webhook URLs"
+msgstr ""
+
+#: includes/pro/class-webhook.php:206
+msgid ""
+"One URL per line. Slack and Discord incoming-webhook URLs are detected "
+"automatically; anything else gets a generic JSON payload."
+msgstr ""
+
+#: includes/pro/class-language-override.php:51
+msgid "English"
+msgstr ""
+
+#: includes/pro/class-language-override.php:52
+msgid "Tiếng Việt (Vietnamese)"
+msgstr ""
+
+#: includes/pro/class-language-override.php:53
+msgid "Español (Spanish)"
+msgstr ""
+
+#: includes/pro/class-language-override.php:54
+msgid "Français (French)"
+msgstr ""
+
+#: includes/pro/class-language-override.php:55
+msgid "Deutsch (German)"
+msgstr ""
+
+#: includes/pro/class-language-override.php:56
+msgid "Português do Brasil (Portuguese, Brazil)"
+msgstr ""
+
+#: includes/pro/class-language-override.php:57
+msgid "Italiano (Italian)"
+msgstr ""
+
+#: includes/pro/class-language-override.php:58
+msgid "日本語 (Japanese)"
+msgstr ""
+
+#: includes/pro/class-language-override.php:59
+msgid "Русский (Russian)"
+msgstr ""
+
+#: includes/pro/class-language-override.php:60
+msgid "简体中文 (Chinese, Simplified)"
+msgstr ""
+
+#: includes/pro/class-language-override.php:61
+msgid "Bahasa Indonesia (Indonesian)"
+msgstr ""
+
+#: includes/pro/class-language-override.php:62
+msgid "Nederlands (Dutch)"
+msgstr ""
+
+#: includes/pro/class-language-override.php:90
+msgid "Language override (Pro)"
+msgstr ""
+
+#: includes/pro/class-language-override.php:93
+msgid "Override widget language"
+msgstr ""
+
+#: includes/pro/class-language-override.php:97
+msgid ""
+"Show the widget in a specific language, independent of the site language"
+msgstr ""
+
+#: includes/pro/class-role-visibility.php:88
+msgid "Role & visibility (Pro)"
+msgstr ""
+
+#: includes/pro/class-role-visibility.php:91
+msgid "Who can see the widget"
+msgstr ""
+
+#: includes/pro/class-role-visibility.php:96
+msgid "Everyone (no restriction — same as Free)"
+msgstr ""
+
+#: includes/pro/class-role-visibility.php:101
+msgid "Only logged-in visitors"
+msgstr ""
+
+#: includes/pro/class-role-visibility.php:106
+msgid "Only specific roles"
+msgstr ""
+
+#: includes/pro/class-role-visibility.php:110
+msgid ""
+"Narrows targeting further — it can only hide the widget somewhere targeting "
+"would otherwise show it, never show it somewhere targeting already ruled out."
+msgstr ""
+
+#: includes/pro/class-role-visibility.php:115
+msgid "Allowed roles"
+msgstr ""
+
+#. translators: 1: site name, 2: note author's name.
+#: includes/pro/class-mentions.php:76
+#, php-format
+msgid "[%1$s] %2$s mentioned you in a feedback note"
+msgstr ""
+
+#. translators: %s: note author's name.
+#: includes/pro/class-mentions.php:84
+#, php-format
+msgid "%s mentioned you in an internal note:"
+msgstr ""
+
+#. translators: %s: brand name (white-labeled or default "FeedHat").
+#: includes/pro/class-white-label.php:163
+#, php-format
+msgid "Sent via %s"
+msgstr ""
+
+#: includes/pro/class-white-label.php:174
+msgid "White label (Pro)"
+msgstr ""
+
+#: includes/pro/class-white-label.php:177
+msgid "Enable white label"
+msgstr ""
+
+#: includes/pro/class-white-label.php:181
+msgid "Replace the \"FeedHat\" branding on the widget with your own"
+msgstr ""
+
+#: includes/pro/class-white-label.php:186
+msgid "Brand name"
+msgstr ""
+
+#: includes/pro/class-white-label.php:192
+msgid "Logo"
+msgstr ""
+
+#: includes/pro/class-white-label.php:205
+msgid "Upload logo"
+msgstr ""
+
+#: includes/pro/class-white-label.php:206
+msgid "Remove"
+msgstr ""
+
+#: includes/pro/class-white-label.php:208
+msgid ""
+"PNG, JPG, GIF, or SVG. Shown in the widget panel header. Leave empty for no "
+"logo."
+msgstr ""
+
+#: includes/pro/class-white-label.php:214
+msgid "Brand color"
+msgstr ""
+
+#: includes/pro/class-white-label.php:217
+msgid ""
+"Re-themes the whole widget panel (submit button, accents) — separate from "
+"the launcher button color above."
+msgstr ""
+
+#: includes/pro/class-assignment.php:134
+msgid "Auto-assignment (Pro)"
+msgstr ""
+
+#: includes/pro/class-assignment.php:137
+msgid "Enable auto-assignment"
+msgstr ""
+
+#: includes/pro/class-assignment.php:141
+msgid "Assign new feedback to a team member based on the page it came from"
+msgstr ""
+
+#. translators: %s: example route line, e.g. "/shop/*|jane".
+#: includes/pro/class-assignment.php:153
+#, php-format
+msgid ""
+"One route per line, format %s (username, not email) — first matching route "
+"wins. Shown on the Kanban card as the assignee."
+msgstr ""
+
+#: includes/pro/class-kanban.php:78
+msgid "In Progress"
+msgstr ""
+
+#: includes/pro/class-kanban.php:80
+msgid "Won't Fix"
+msgstr ""
+
+#: includes/pro/class-kanban.php:91 includes/pro/class-kanban.php:92
+msgid "Kanban Board"
+msgstr ""
+
+#: includes/pro/class-kanban.php:168
+msgid "Could not update status. Please refresh and try again."
+msgstr ""
+
+#: includes/pro/class-kanban.php:169 includes/pro/class-kanban.php:686
+msgid "Note cannot be empty."
+msgstr ""
+
+#: includes/pro/class-kanban.php:170
+msgid "Could not save the note. Please try again."
+msgstr ""
+
+#: includes/pro/class-kanban.php:171
+msgid "That image is too large. Please choose a smaller file."
+msgstr ""
+
+#: includes/pro/class-kanban.php:172 includes/pro/class-kanban.php:592
+msgid "Annotate Screenshot"
+msgstr ""
+
+#: includes/pro/class-kanban.php:181
+msgid "Use This Image"
+msgstr ""
+
+#: includes/pro/class-kanban.php:230
+msgid "Feedback Kanban Board"
+msgstr ""
+
+#. translators: %d: number of days.
+#: includes/pro/class-kanban.php:259
+#, php-format
+msgid "Closed in the last %d days"
+msgstr ""
+
+#. translators: 1: number of cards shown, 2: total cards in this column.
+#: includes/pro/class-kanban.php:280
+#, php-format
+msgid "Showing the %1$d most recent of %2$d."
+msgstr ""
+
+#: includes/pro/class-kanban.php:286
+msgid "View all in the list"
+msgstr ""
+
+#: includes/pro/class-kanban.php:297
+msgid "View older feedback in the list"
+msgstr ""
+
+#: includes/pro/class-kanban.php:503
+msgid "View full screenshot"
+msgstr ""
+
+#: includes/pro/class-kanban.php:512 includes/pro/class-kanban.php:670
+msgid "Not allowed."
+msgstr ""
+
+#: includes/pro/class-kanban.php:520 includes/pro/class-kanban.php:678
+msgid "Security check failed."
+msgstr ""
+
+#: includes/pro/class-kanban.php:524 includes/pro/class-kanban.php:682
+msgid "Invalid feedback item."
+msgstr ""
+
+#: includes/pro/class-kanban.php:528
+msgid "Invalid status."
+msgstr ""
+
+#: includes/pro/class-kanban.php:546
+msgid "Internal Notes (Team Only)"
+msgstr ""
+
+#: includes/pro/class-kanban.php:559
+msgid "You do not have permission to view internal notes."
+msgstr ""
+
+#: includes/pro/class-kanban.php:573
+msgid ""
+"Only your team sees these notes here in wp-admin — the person who submitted "
+"this feedback never does."
+msgstr ""
+
+#: includes/pro/class-kanban.php:583
+msgid "Add an internal note…"
+msgstr ""
+
+#: includes/pro/class-kanban.php:585
+msgid "Remove image"
+msgstr ""
+
+#: includes/pro/class-kanban.php:588
+msgid "Add Note"
+msgstr ""
+
+#: includes/pro/class-kanban.php:589
+msgid "Attach Image"
+msgstr ""
+
+#: includes/pro/class-kanban.php:623
+msgid "View full image"
+msgstr ""
+
+#. translators: %s: human-readable time difference, e.g. "2 hours".
+#: includes/pro/class-kanban.php:660
+#, php-format
+msgid "%s ago"
+msgstr ""
+
+#: includes/pro/class-kanban.php:740
+msgid "just now"
+msgstr ""
