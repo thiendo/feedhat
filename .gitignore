@@ -1,11 +1,11 @@
 .DS_Store
 dist/
+.phpcs.xml.dist
 
-# Local-only: Pro package, Freemius SDK, and internal notes.
-# The public GitHub / WordPress.org tree is Free only.
+# Local-only. This repo matches the WordPress.org Free package.
 includes/pro/
 vendor/freemius/
-build/build-full.sh
+build/
 assets/css/kanban.css
 assets/js/kanban.js
 assets/js/note-annotator.js
